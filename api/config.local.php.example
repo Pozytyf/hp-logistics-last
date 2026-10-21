@@ -1,0 +1,15 @@
+<?php
+/**
+ * Copier ce fichier en "config.local.php" sur le serveur LWS (même dossier api/) puis renseigner les valeurs.
+ * Ne jamais envoyer config.local.php dans un dépôt Git ni dans un ZIP partagé.
+ */
+return array(
+    // Clé "secret"/service_role de la base (Supabase / Lovable Cloud). Permet ensuite de
+    // FERMER l'insertion publique directe sur contact_messages et quote_requests.
+    'supabase_service_key' => '',
+
+    // Secret HMAC personnalisé (optionnel) : chaîne aléatoire de 40 caractères ou plus
+    'secret' => '',
+
+    // 'notify_to' => 'info@hp-logistics.net',
+);
